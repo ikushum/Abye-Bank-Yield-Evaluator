@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Abye Bank Yield Evaluator </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="script.js" ></script>
+
+    <!-- Load libraries (Note: IE required polyfills, in this exact order_ -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+    <!-- Configure SystemJS -->
+    <script>
+        System.config({
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('app/js/main').then(null, console.error.bind(console));
+    </script>
+</head>
+<body>
+
+<!--responsive menu-->
+<div id="res_menu">
+    <div id="res_menu_label">
+        <div id="line"></div><div id="line"></div><div id="line"></div>
+    </div>
+</div>
+
+<!---Normal Menu-->
+<div id="menu2"></div>
+<div id="menu">
+    <a href="#"> <img class="logo" src="img/logo.gif"> </a>
+    <div id="menu_tabs">
+        <a><p class="menu"> HOME </p></a>
+        <a><p class="menu"> ABOUT </p></a>
+        <a ><p class="menu"> TAB1 </p></a>
+        <a ><p class="menu"> TAB2 </p></a>
+    </div>
+</div>
+
+<!---header section-->
+<div id="header">
+    <div id="coverText">
+        <h1 class="header_head"> Abye Bank Yield Evaluator </h1>
+        <h2 class="header_head"> With us, the best banking service in the town is just a few clicks away. </h2>
+        <a onclick="navigate()"><h2 class="get_started"> Get Started </h2></a>
+    </div>
+</div>
+
+<div id="content">
+
+    <div id="main_block">
+
+        <h1 class="header1"> Which service are you interested in ? </h1>
+        <h2 class="header2"> We will guide you through some basic steps and find the best bank at your service </h1>
+
+        <br><br><br> 
+        <div id = "position"> <span style="font-weight:bold;color:grey"> You are at : </span>
+            <a class="position" onclick="show_services()" id="pos_services"> Services </a>
+            <a class="position" onclick="show_loans()" id="pos_loan" >  Loans </a>
+            <a class="position" onclick="show_deposits()" id="pos_deposit" >  Deposits </a>
+        </div>
+
+        <div id="first">
+            <div class="services_items" id="loan" onclick="show_loans()">
+                <img class="services" src="img/loan_icon.gif">
+                <h2 class="services"> LOAN </h2>
+            </div>
+
+            <div class="services_items" id="deposit" onclick="show_deposits()">
+                <img class="services" src="img/deposit-icon.gif">
+                <h2 class="services"> DEPOSIT </h2>
+            </div>
+        </div>
+
+        <div id="loans">
+            <div class="services_items" >
+                <img class="services" src="img/home_loan_icon.gif">
+                <h2 class="services"> HOME LOAN </h2>
+            </div>
+
+            <div class="services_items">
+                <img class="services" src="img/student_loan_icon.gif">
+                <h2 class="services"> STUDENT LOAN </h2>
+            </div>
+
+            <div class="services_items">
+                <img class="services" src="img/car_loan_icon.gif">
+                <h2 class="services"> CAR LOAN </h2>
+            </div>
+        </div>
+
+        <div id="deposits">
+            <div class="services_items">
+                <img class="services" src="img/savings_account_icon.gif">
+                <h2 class="services">  SAVINGS ACCOUNT </h2>
+            </div>
+
+            <div class="services_items">
+                <img class="services" src="img/fixed_account_icon.gif">
+                <h2 class="services"> FIXED ACCOUNT </h2>
+            </div>
+
+            <div class="services_items">
+                <img class="services" src="img/special_account_icon.gif">
+                <h2 class="services"> SPECIAL ACCOUNT </h2>
+            </div>
+        </div>
+
+        <div id="banks">
+
+            <h1 class="header1"> Banks </h1>
+            <h2 class="header2"> Check the bank to compare </h1>
+
+            <div class="bank">
+                <div class="checkbox_holder">
+                    <div class="checkboxFive">
+                        <input type="checkbox" value="1" id="checkboxFiveInput" name="bank" />
+                        <label for="checkboxFiveInput"></label>
+                    </div>
+                </div>
+
+                <div class="bank_info">
+                    <p class="bank_name"> Nepal Bank Limited </p>
+                    <p class="bank_service"> Interest rate : 10% </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!---footer section-->
+    <div id="footer" style="margin-top:0px">
+        <div id="footer_icons">
+            <a target="_blank" href=""><img class="footer_icons" src="img/fb.gif"></a>
+            <a target="_blank" href=""><img class="footer_icons" src="img/twitter.gif"></a>
+            <a target="_blank" href=""><img class="footer_icons" src="img/insta.gif"></a>
+        </div>
+        <text class="footer"> &#169 2017 Abye Bank Yield Evaluator  </text>
+        <text class="footer"> All rights reserved </text>
+        <text class="footer"> Further details: abye@gmail.com </text>
+    </div>
+
+</div>
+
+
+</body>
+</html>
