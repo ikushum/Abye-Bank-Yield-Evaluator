@@ -16,7 +16,8 @@ export class BanksComponent {
   	onGetRequest(){
 	  	this._http.getCurrentTime()
 	  		.subscribe(
-	  			data => this.getData= data;
+	  			data => this.getData= JSON.stringify(data),
+	  			error => console.log(error);
 	  		);
   	}	
 }

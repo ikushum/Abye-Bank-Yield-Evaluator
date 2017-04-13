@@ -9,7 +9,7 @@ export class BanksService {
   constructor(private _http: Http) { }
 
   getCurrentTime(){
-    return this._http.get('http://date.jsontest.com')
+    return this._http.get('http://time.jsontest.com')
         .map(res => res.json());
   }
 }
