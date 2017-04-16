@@ -1,7 +1,7 @@
 import {Component} from 'angular2/core';
 import {BankservicesComponent} from './bankservices.component'
-import {LoanComponent} from './loan_component'
-import {DepositComponent} from './deposit_component'
+import {LoanComponent} from './loan.component'
+import {DepositComponent} from './deposit.component'
 import {BanksComponent} from './banks.component'
 
 

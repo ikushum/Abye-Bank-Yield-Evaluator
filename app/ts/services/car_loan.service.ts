@@ -4,12 +4,12 @@ import {Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class BanksService {
+export class CarLoanService {
 
   constructor(private _http: Http) { }
 
-  getCurrentTime(){
-    return this._http.get('http://time.jsontest.com')
+  getBank(){
+    return this._http.get('http://ays.pythonanywhere.com/loan/car_loan/')
         .map(res => res.json());
   }
 }
