@@ -8,6 +8,7 @@ function show_services(){
 	$('#first').slideDown(500);
 	$('#deposits').slideUp(500);
 	$('#loans').slideUp(500);
+	$('#Dbanks').slideUp(500);
 	$('#banks').slideUp(500);
 	$('#pos_bank').hide();
 };
@@ -17,6 +18,7 @@ function show_loans(){
 	$('#loans').slideDown(500);
 	$('#pos_loan').show();
 	$('#banks').slideUp(500);
+	$('#Dbanks').slideUp(500);
 	$('#pos_bank').hide();
 };
 
@@ -25,6 +27,7 @@ function show_deposits(){
 	$('#deposits').slideDown(500);
 	$('#pos_deposit').show();
 	$('#banks').slideUp(500);
+	$('#Dbanks').slideUp(500);
 	$('#pos_bank').hide();
 };
 
@@ -32,6 +35,13 @@ function show_banks(){
 	$('#deposits').slideUp(500);
 	$('#loans').slideUp(500);
 	$('#banks').slideDown(500);
+	$('#pos_bank').show();
+};
+
+function show_Dbanks(){
+	$('#deposits').slideUp(500);
+	$('#loans').slideUp(500);
+	$('#Dbanks').slideDown(500);
 	$('#pos_bank').show();
 };
 	

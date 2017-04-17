@@ -1,18 +1,18 @@
 <div id="deposits">
-    <div class="services_items" onclick="show_banks()" (click)="onGetRequest()">
+    <div class="services_items" (click)="getSavingAccounts()" onclick="show_Dbanks()" >
         <img class="services" src="img/savings_account_icon.gif">
         <h2 class="services">  SAVINGS ACCOUNT </h2>
     </div>
 
-    <div class="services_items" onclick="show_banks()" (click)="onGetRequest()">
+    <div class="services_items" (click)="getFixedAccounts()" onclick="show_Dbanks()" >
         <img class="services" src="img/fixed_account_icon.gif">
         <h2 class="services"> FIXED ACCOUNT </h2>
     </div>
 
-    <div class="services_items" onclick="show_banks()" (click)="onGetRequest()">
+    <div class="services_items" (click)="getSpecialAccounts()" onclick="show_Dbanks()" >
         <img class="services" src="img/special_account_icon.gif">
         <h2 class="services"> SPECIAL ACCOUNT </h2>
     </div>
 </div>
 
-<banks> </banks>
+<deposit_banks [deposit_banks]='deposit_banks'> Loading .... </deposit_banks>

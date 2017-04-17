@@ -220,11 +220,11 @@ img.services{
 	width:160px;
 }
 
-#loans, #deposits, #pos_loan, #pos_deposit,#pos_bank, #banks {
+#loans, #deposits, #pos_loan, #pos_deposit,#pos_bank, #banks, #Dbanks {
 	display: none;
 }
 
-#banks{
+#banks, #Dbanks{
 	padding:100px 0px;
 }
 

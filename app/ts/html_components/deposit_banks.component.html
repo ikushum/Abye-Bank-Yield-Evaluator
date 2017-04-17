@@ -1,0 +1,21 @@
+<div id="Dbanks">
+    <h1 class="header1"> Banks </h1>
+    <h2 class="header2"> Check the bank to compare </h2>
+
+    <div *ngIf="deposit_banks"> {{ deposit_banks }}</div>
+
+    <div class="bank">
+        <div class="checkbox_holder">
+            <div class="checkboxFive">
+                <input type="checkbox" value="1" id="checkboxFiveInput1" name="bank" />
+                <label for="checkboxFiveInput1"></label>
+            </div>
+        </div>
+
+        <div class="bank_info">
+            <p class="bank_name"> Nepal Bank Limited </p>
+            <p class="bank_service"> Interest rate : 10% </p>
+        </div>
+    </div>
+
+</div>
