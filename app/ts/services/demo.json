@@ -1,0 +1,10 @@
+{
+    "Nepal Bank":{
+        "title" : "Nepal Bank",
+        "interest" : "10%"
+    },
+    "US Bank":{
+        "title" : "US Bank",
+        "interest" : "12%"
+    }
+}

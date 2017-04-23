@@ -9,7 +9,7 @@ export class HomeLoanService {
   constructor(private _http: Http) { }
 
   getBank(){
-    return this._http.get('http://ays.pythonanywhere.com/loan/home_loan/')
+    return this._http.get('app/ts/services/demo.json')
         .map(res => res.json());
   }
 }

@@ -1,10 +1,8 @@
 <div id="banks">
     <h1 class="header1"> Banks </h1>
     <h2 class="header2"> Check the bank to compare </h2>
-
-    <div *ngIf="banks"> {{ banks }}</div>
-
-    <div class="bank">
+  
+    <div class="bank" *ngFor="#bank of banks | obj2arr">
         <div class="checkbox_holder">
             <div class="checkboxFive">
                 <input type="checkbox" value="1" id="checkboxFiveInput" name="bank" />
@@ -12,9 +10,9 @@
             </div>
         </div>
 
-        <div class="bank_info">
-            <p class="bank_name"> Nepal Bank Limited </p>
-            <p class="bank_service"> Interest rate : 10% </p>
+        <div class="bank_info" >
+            <p class="bank_name"> {{ bank.value["title"] }} </p>
+            <p class="bank_service"> Interest rate : {{ bank.value["interest"] }} </p>
         </div>
     </div>
 
