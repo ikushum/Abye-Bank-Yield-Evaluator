@@ -2,11 +2,12 @@
     <h1 class="header1"> Banks </h1>
     <h2 class="header2"> Check the bank to compare </h2>
   
-    <div class="bank" *ngFor="#bank of banks | obj2arr">
+    <div class="bank" *ngFor="#bank of banks | obj2arr; #i = index">
+
         <div class="checkbox_holder">
             <div class="checkboxFive">
-                <input type="checkbox" value="1" id="checkboxFiveInput" name="bank" />
-                <label for="checkboxFiveInput"></label>
+                <input type="checkbox" value="1" [attr.id]="i" name="bank" />
+                <label [attr.for]="i"></label>
             </div>
         </div>
 
