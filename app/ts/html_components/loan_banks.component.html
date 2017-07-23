@@ -1,24 +1,30 @@
 <div id="banks">
     <h1 class="header1"> Banks </h1>
     <h2 class="header2"> Check the bank to compare </h2>
-  
-    <div class="bank" *ngFor="#bank of banks | obj2arr; #i = index">
 
-        <div class="checkbox_holder">
-            <div class="checkboxFive">
-                <input type="checkbox" [attr.value]="bank" [attr.id]="i" name="bank" (click)="change(bank)" />
-                <label [attr.for]="i"></label>
+    <div id="bank_list">
+        <div class="bank" *ngFor="#bank of banks | obj2arr; #i = index">
+
+            <div class="checkbox_holder">
+                <div class="checkboxFive">
+                    <input type="checkbox" [attr.value]="bank" [attr.id]="i" name="bank" (click)="change(bank)" />
+                    <label [attr.for]="i"></label>
+                </div>
             </div>
-        </div>
 
-        <div class="bank_info" >
-            <p class="bank_name"> {{ bank.key }} </p>
-            <p class="bank_service"> Interest rate : {{ bank.value["interest"] }} </p>
+            <div class="bank_info" >
+                <p class="bank_name"> {{ bank.key }} </p>
+                <p class="bank_service"> Interest rate : {{ bank.value["interest"] }} </p>
+            </div>
+
         </div>
     </div>
 
-    <div class="bank" *ngFor="#bank of selectedEmployees">
-        <p> {{ bank.key }} </p>
+    <div class="table">
+        <div *ngFor="#bank of selectedEmployees">
+            <p> {{ bank.key }} </p>
+            <p>  {{ bank.value["interest"] }} </p>
+        </div>
     </div>
 
 </div>

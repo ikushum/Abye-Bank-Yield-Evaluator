@@ -228,13 +228,27 @@ img.services{
 	padding:100px 0px;
 }
 
-.bank{
-	vertical-align: top;
-	display:table;
+#bank_list{
 	margin:100px auto 0px auto;
+	vertical-align: top;
+	display:inline-block;
+	margin-left:0px;
+}
+
+.bank{
+	margin:0px auto 50px auto;
 	-webkit-box-shadow: 1px 5px 8px -1px #c5c5c5;
     -moz-box-shadow: 1px 5px 8px -1px #c5c5c5;
-    box-shadow: 1px 5px 8px -1px #c5c5c5;
+	box-shadow: 1px 5px 8px -1px #c5c5c5;
+}
+
+.table{
+	margin:100px auto 0px auto;
+	width:40%;
+	display:inline-block;
+	vertical-align: top;
+	display:inline-block;
+	margin-right:0px;
 }
 
 .checkbox_holder{
