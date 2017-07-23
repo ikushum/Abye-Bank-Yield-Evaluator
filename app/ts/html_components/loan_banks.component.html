@@ -6,15 +6,19 @@
 
         <div class="checkbox_holder">
             <div class="checkboxFive">
-                <input type="checkbox" value="1" [attr.id]="i" name="bank" />
+                <input type="checkbox" [attr.value]="bank" [attr.id]="i" name="bank" (click)="change(bank)" />
                 <label [attr.for]="i"></label>
             </div>
         </div>
 
         <div class="bank_info" >
-            <p class="bank_name"> {{ bank.value["title"] }} </p>
+            <p class="bank_name"> {{ bank.key }} </p>
             <p class="bank_service"> Interest rate : {{ bank.value["interest"] }} </p>
         </div>
+    </div>
+
+    <div class="bank" *ngFor="#bank of selectedEmployees">
+        <p> {{ bank.key }} </p>
     </div>
 
 </div>
