@@ -5,43 +5,43 @@ function navigate(){
 function show_services(){
 	$('#pos_loan').hide();
 	$('#pos_deposit').hide();
-	$('#first').slideDown(500);
-	$('#deposits').slideUp(500);
-	$('#loans').slideUp(500);
-	$('#Dbanks').slideUp(500);
-	$('#banks').slideUp(500);
+	$('#first').show(1000);
+	$('#deposits').hide(1000);
+	$('#loans').hide(1000);
+	$('#Dbanks').hide(1000);
+	$('#banks').hide(1000);
 	$('#pos_bank').hide();
 };
 
 function show_loans(){
-	$('#first').slideUp(500);	
-	$('#loans').slideDown(500);
+	$('#first').hide(1000);
+	$('#loans').show(1000);
 	$('#pos_loan').show();
-	$('#banks').slideUp(500);
-	$('#Dbanks').slideUp(500);
+	$('#banks').hide(1000);
+	$('#Dbanks').hide(1000);
 	$('#pos_bank').hide();
 };
 
 function show_deposits(){
-	$('#first').slideUp(500);
-	$('#deposits').slideDown(500);
+	$('#first').hide(1000);
+	$('#deposits').show(1000);
 	$('#pos_deposit').show();
-	$('#banks').slideUp(500);
-	$('#Dbanks').slideUp(500);
+	$('#banks').hide(1000);
+	$('#Dbanks').hide(1000);
 	$('#pos_bank').hide();
 };
 
 function show_banks(){
-	$('#deposits').slideUp(500);
-	$('#loans').slideUp(500);
-	$('#banks').slideDown(500);
+	$('#deposits').hide(1000);
+	$('#loans').hide(1000);
+	$('#banks').show(500);
 	$('#pos_bank').show();
 };
 
 function show_Dbanks(){
-	$('#deposits').slideUp(500);
-	$('#loans').slideUp(500);
-	$('#Dbanks').slideDown(500);
+	$('#deposits').hide(1000);
+	$('#loans').hide(1000);
+	$('#Dbanks').show(1000);
 	$('#pos_bank').show();
 };
 	
